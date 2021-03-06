@@ -44,7 +44,7 @@
 </style>
 
 <body>
-    <div>
+    <div id="container">
         <h1 class="text-center text-white">Puja Kerang Ajaib</h1>
         <div class="container">
             <img src="kerang.png" style="width: 40%;" alt="puja" class=" rounded mx-auto d-block">
