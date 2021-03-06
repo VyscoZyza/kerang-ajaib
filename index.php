@@ -34,30 +34,34 @@
     }
 
     body {
-        background: black !important;
         height: 100%;
-        width: 100%;
+        background-color: black;
+        background-image: url("bg.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+
     }
 </style>
 
 <body>
+    <div>
+        <h1 class="text-center text-white">Puja Kerang Ajaib</h1>
+        <div class="container">
+            <img src="kerang.png" style="width: 40%;" alt="puja" class=" rounded mx-auto d-block">
+        </div>
 
-    <h1 class="text-center text-white">Puja Kerang Ajaib</h1>
-    <div class="container">
-        <img src="kerang.png" style="width: 40%;" alt="puja" class=" rounded mx-auto d-block">
+        <h1 id="Ask" class="text-center text-primary">
+        </h1>
+        <?php
+        $a = array("Tidak Ada", "Silahkan", "Tidak Boleh", "Jangan", "Iya deh", "OK", "Coba Lagi");
+        $random_keys = array_rand($a);
+        ?>
+        <!-- <h1 class="text-center"><?php echo $a[$random_keys] . "<br>"; ?></h1> -->
+        <br>
+        <button id="button" class="btn btn-primary center mb-1" onclick="Ask()">
+            Tarik
+        </button>
     </div>
-
-    <h1 id="Ask" class="text-center text-primary">
-    </h1>
-    <?php
-    $a = array("Tidak Ada", "Silahkan", "Tidak Boleh", "Jangan", "Iya deh", "OK", "Coba Lagi");
-    $random_keys = array_rand($a);
-    ?>
-    <!-- <h1 class="text-center"><?php echo $a[$random_keys] . "<br>"; ?></h1> -->
-    <button id="button" class="btn btn-primary center mb-1" onclick="Ask()">
-        Tarik
-    </button>
-
 </body>
 <script>
     var ask = document.getElementById('Ask');
