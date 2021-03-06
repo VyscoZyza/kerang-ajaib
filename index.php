@@ -41,10 +41,15 @@
         background-repeat: no-repeat;
 
     }
+
+    .red {
+        background-color: #c9a1d5;
+
+    }
 </style>
 
 <body>
-    <div id="container">
+    <div>
         <h1 class="text-center text-white">Puja Kerang Ajaib</h1>
         <div class="container">
             <img src="kerang.png" style="width: 40%;" alt="puja" class=" rounded mx-auto d-block">
@@ -58,7 +63,7 @@
         ?>
         <!-- <h1 class="text-center"><?php echo $a[$random_keys] . "<br>"; ?></h1> -->
         <br>
-        <button id="button" class="btn btn-primary center mb-1" onclick="Ask()">
+        <button id="button" class="btn center mb-1 red" onclick="Ask()">
             Tarik
         </button>
     </div>
