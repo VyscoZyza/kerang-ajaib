@@ -71,7 +71,7 @@
 <script>
     var ask = document.getElementById('Ask');
 
-    var arr = ["Tidak Ada", "Silahkan", "Tidak Boleh", "Jangan", "Iya deh", "OK", "Coba Lagi"];
+    var arr = ["Tidak Ada", "Silahkan", "Tidak Boleh", "Jangan", "Iya deh", "OK", "Coba Lagi", "Mungkin Suatu Hari"];
 
     function Ask() {
         var value = arr[Math.floor(Math.random() * arr.length)];
